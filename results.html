@@ -35,6 +35,8 @@
         let address = urlParams.get('address') 
         let cityStateZip = `${urlParams.get('city')}, ${urlParams.get('state')} ${urlParams.get('zip')}`
         let emailMessage = document.createElement('p')
+
+        
         
         // Fill the page with the user's personal information
         document.getElementById('disclaimer').textContent = `Thank you, ${name}, for entering our once in a lifetime vacation contest!`
@@ -42,6 +44,7 @@
         document.getElementById('disclaimer').append(emailMessage)
         document.getElementById('address1').textContent = address
         document.getElementById('address2').textContent = cityStateZip
+        
 
         // Put the image of the chosen vacation destination
         if (choice == 'Japan') {
